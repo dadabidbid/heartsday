@@ -6,6 +6,7 @@ const nextConfig = {
     },
     basePath: "/heartsday", // Change this
     assetPrefix: "/heartsday",
+    trailingSlash: true,
   };
   
   export default nextConfig;
