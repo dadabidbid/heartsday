@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    output: 'export',
+    images: {
+      unoptimized: true,
+    },
+    basePath: "/heartsday", // Change this
+    assetPrefix: "/heartsday",
+  };
+  
+  export default nextConfig;
+  

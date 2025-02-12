@@ -1,12 +1,15 @@
 {
+  "homepage": "https://dadabidbid.github.io/heartsday",
   "name": "heartday",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "build": "next build",
+  "start": "next start",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out",
+  "lint": "next lint"
   },
   "dependencies": {
     "next": "15.1.7",

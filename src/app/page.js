@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
+
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedFlowers, setSelectedFlowers] = useState([]); // Holds up to 8 flowers
@@ -11,19 +12,19 @@ export default function Home() {
   const [showLoveMessage, setShowLoveMessage] = useState(false); // Controls text change
 
   const images = [
-    { src: "/red1.png", alt: "Red Flower" },
-    { src: "/white1.png", alt: "White Flower" },
-    { src: "/pinkwhite1.png", alt: "Pink & White Flower" },
-    { src: "/purple1.png", alt: "Purple Flower" },
-    { src: "/red2.png", alt: "Red Flower 2" },
-    { src: "/white2.png", alt: "White Flower 2" },
-    { src: "/yellow1.png", alt: "Yellow Flower" },
-    { src: "/orange1.png", alt: "Orange Flower" },
-    { src: "/pruple2.png", alt: "Purple Flower 2" },
-    { src: "/blue1.png", alt: "Blue Flower" },
-    { src: "/yellow2.png", alt: "Yellow Flower 2"},
-    { src: "/yellow3.png", alt: "Yellow Flower 3" },
-    { src: "/blue2.png", alt: "Blue Flower 2" },
+    { src: "/heartsday/red1.png", alt: "Red Flower" },
+    { src: "/heartsday/white1.png", alt: "White Flower" },
+    { src: "/heartsday/pinkwhite1.png", alt: "Pink & White Flower" },
+    { src: "/heartsday/purple1.png", alt: "Purple Flower" },
+    { src: "/heartsday/red2.png", alt: "Red Flower 2" },
+    { src: "/heartsday/white2.png", alt: "White Flower 2" },
+    { src: "/heartsday/yellow1.png", alt: "Yellow Flower" },
+    { src: "/heartsday/orange1.png", alt: "Orange Flower" },
+    { src: "/heartsday/pruple2.png", alt: "Purple Flower 2" },
+    { src: "/heartsday//blue1.png", alt: "Blue Flower" },
+    { src: "/heartsday/yellow2.png", alt: "Yellow Flower 2"},
+    { src: "/heartsday/yellow3.png", alt: "Yellow Flower 3" },
+    { src: "/heartsday/blue2.png", alt: "Blue Flower 2" },
 
   ];
 
@@ -73,7 +74,7 @@ export default function Home() {
           
           {/* Back Layer */}
           <Image
-            src="/bouquet_back.png"
+            src="/heartsday/bouquet_back.png"
             width={250}
             height={250}
             className="absolute top-1/4 left-1/2 transform -translate-x-1/6 -translate-y-1/9 z-0"
@@ -96,7 +97,7 @@ export default function Home() {
   }
 
   // Adjust size if it's yellow2
-  const isYellow2 = flower.src === "/yellow2.png";
+  const isYellow2 = flower.src === "/heartsday/yellow2.png";
   const flowerWidth = isYellow2 ? 125 : 200; // Smaller size for yellow2
   const flowerHeight = isYellow2 ? 125 : 200;
 
@@ -120,7 +121,7 @@ export default function Home() {
 
           {/* Front Layer */}
           <Image
-            src="/bouquet_front.png"
+            src="/heartsday/bouquet_front.png"
             width={250}
             height={250}
             className="absolute top-1/2 left-1/2 transform -translate-x-1/6 -translate-y-1/9 z-10"
@@ -135,7 +136,7 @@ export default function Home() {
           {/* Flower Selection Carousel */}
           <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 p-4 flex items-center justify-between rounded-lg w-2/4 max-w-2xl">
             <button onClick={handlePrev} className="text-white hover:brightness-75 transition-all text-lg">
-              <Image src="/play.png" width={60} height={60} alt="Previous" className="rotate-180" />
+              <Image src="/heartsday/play.png" width={60} height={60} alt="Previous" className="rotate-180" />
             </button>
             <div className="flex overflow-hidden w-full justify-center gap-4">
               {getVisibleImages().map((image, index) => (
@@ -150,7 +151,7 @@ export default function Home() {
               ))}
             </div>
             <button onClick={handleNext} className="text-white hover:brightness-75 transition-all text-lg">
-              <Image src="/play.png" width={60} height={60} alt="Next" />
+              <Image src="/heartsday/play.png" width={60} height={60} alt="Next" />
             </button>
           </div>
 
