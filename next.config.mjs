@@ -1,11 +1,10 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+    output: "export",
     images: {
       unoptimized: true,
     },
-    basePath: "/heartsday", // Change this
-    assetPrefix: "/heartsday",
+    basePath: "/heartsday",
+    assetPrefix: "https://dadabidbid.github.io/heartsday",
     trailingSlash: true,
   };
   
